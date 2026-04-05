@@ -1,0 +1,37 @@
+/*
+ * 1) Altere o programa para que o usuário digite os 4 boletos que ele deve pagar, e o salário líquido que ele tem disponível e imprima: 
+ * • o total de suas contas;
+ * • o valor que irá sobrar (ou faltar).
+ */
+
+import java.util.Scanner;
+import java.io.*;
+
+class Main {
+	public static void main(String[] args) {
+		double boleto1, boleto2, boleto3,boleto4, total, salarioliquido, valorrestante;
+		Scanner ler = new
+		Scanner(System.in);
+
+		System.out.println("Digite o valor do 1º boleto:");
+		boleto1 = ler.nextDouble();
+
+		System.out.println("Digite o valor do 2º boleto:");
+		boleto2 = ler.nextDouble();
+
+		System.out.println("Digite o valor do 3º boleto:");
+		boleto3 = ler.nextDouble();
+
+		System.out.println("Digite o valor do 4º boleto:");
+		boleto4 = ler.nextDouble();
+
+		System.out.println("Digite o valor do seu salario liquido:");
+		salarioliquido = ler.nextDouble();
+
+		total = boleto1+boleto2+boleto3+boleto4;
+		System.out.print("o valor total de suas contas é: " + total);
+
+		valorrestante = salarioliquido-total;
+		System.out.print("o valor que irá sobrar ou faltar é): " + valorrestante);
+	}
+}
